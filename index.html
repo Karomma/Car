@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="th">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Car Detailing — บริการล้างเคลือบรถ</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="assets/logo.svg">
+	<meta name="description" content="บริการ Car Detailing มืออาชีพ — ล้าง ทำความสะอาด เคลือบเงา และดูแลรถของคุณ">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-row">
+			<a class="brand" href="#home">
+				<img src="assets/logo.svg" alt="โลโก้" class="logo">
+				<div class="brand-text">
+					<span class="brand-name">CarDetail</span>
+					<span class="brand-tag">บริการดูแลรถครบวงจร</span>
+				</div>
+			</a>
+			<button id="nav-toggle" aria-label="เมนู">☰</button>
+			<nav id="nav" class="nav">
+				<a href="#home">หน้าแรก</a>
+				<a href="#services">บริการ</a>
+				<a href="#pricing">ราคา</a>
+				<a href="#gallery">ผลงาน</a>
+				<a href="#contact" class="contact-link">ติดต่อ</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="home" class="hero">
+			<div class="container hero-grid">
+				<div>
+					<h1>Car Detailing มืออาชีพ</h1>
+					<p>เปลี่ยนรถของคุณให้เหมือนใหม่อีกครั้ง บริการล้าง เคลือบเงา ขัดสี และดูแลภายใน</p>
+					<div class="hero-actions">
+						<a class="btn primary" href="#services">ดูบริการ</a>
+						<a class="btn ghost" id="fb-contact" href="https://web.facebook.com/peerapat.somphaberm?locale=th_TH" target="_blank" rel="noopener noreferrer">ติดต่อทาง Facebook</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Car detailing"/>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="container section">
+			<h2>บริการของเรา</h2>
+			<div class="cards">
+				<article class="card">
+					<h3>ล้างและดูแลภายใน</h3>
+					<p>ทำความสะอาดภายใน ดูดฝุ่น เช็ดเบาะ และดูแลกลิ่น</p>
+				</article>
+				<article class="card">
+					<h3>ขัดและเคลือบสี</h3>
+					<p>ขจัดริ้วรอยเล็ก ๆ ขัดเงา และเคลือบเพื่อปกป้องสีรถ</p>
+				</article>
+				<article class="card">
+					<h3>เคลือบเซรามิก (add-on)</h3>
+					<p>ปกป้องสีรถในระยะยาว ลดรอยขีดข่วนและรอยด่าง</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="pricing" class="container section">
+			<h2>แพ็กเกจและราคา</h2>
+			<ul class="pricing">
+				<li><strong>Basic</strong> — ล้างภายนอก + ดูดฝุ่น ฿600</li>
+				<li><strong>Standard</strong> — Basic + ขัดปรับสภาพ ฿2,500</li>
+				<li><strong>Premium</strong> — Standard + เคลือบเงา ฿5,000</li>
+			</ul>
+		</section>
+
+		<section id="gallery" class="container section">
+			<h2>ผลงาน (ตัวอย่าง)</h2>
+			<div class="gallery">
+				<img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=600&auto=format&fit=crop&s=placeholder" alt="car 1">
+				<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=600&auto=format&fit=crop&s=placeholder" alt="car 2">
+				<img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600&auto=format&fit=crop&s=placeholder" alt="car 3">
+			</div>
+		</section>
+
+		<section id="contact" class="container section contact-section">
+			<h2>จองคิว / สอบถาม</h2>
+			<form id="contact-form" class="contact-form">
+				<label>ชื่อ
+					<input type="text" name="name" required>
+				</label>
+				<label>เบอร์ติดต่อ
+					<input type="tel" name="phone" required>
+				</label>
+				<label>บริการที่สนใจ
+					<select name="service">
+						<option>Basic</option>
+						<option>Standard</option>
+						<option>Premium</option>
+					</select>
+				</label>
+				<button type="submit" class="btn primary">ส่งคำขอ</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-row">
+			<div>© <span id="year"></span> CarDetail — บริการดูแลรถ</div>
+			<div>
+				<a class="fb-small" href="https://web.facebook.com/peerapat.somphaberm?locale=th_TH" target="_blank" rel="noopener noreferrer">Facebook</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
